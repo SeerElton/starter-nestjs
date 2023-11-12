@@ -24,11 +24,11 @@ export const environment = {
     // driver: require("sqlite3")
 
     type: 'mysql',
-    host: 'localhost',
+    host: 'sql10.freesqldatabase.com',
     port: 3306,
-    username: "root",
-    password: '',
-    database: 'beba',
+    username: "sql10661403",
+    password: 'Y15KIFRLHE',
+    database: 'sql10661403',
     entities: [__dirname + '/entities/**/*.entity{.ts,.js}'],
     synchronize: true,
     logging: false,
