@@ -4,11 +4,19 @@ import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 import { AuthTokenDecypherInterceptor } from './_helper/auth-token-decypher.interceptor';
 import * as bodyParser from 'body-parser';
 import { DataValidationInterceptor } from './interceptor/validation.interceptor';
+import { CorsOptions } from '@nestjs/common/interfaces/external/cors-options.interface';
 
 async function bootstrap() {
-  const app = await NestFactory.create(AppModule, { cors: true });
+  const app = await NestFactory.create(AppModule);
 
-  app.enableCors({ allowedHeaders: '*', origin: '*', methods: '*' });
+  const corsOptions: CorsOptions = {
+    origin: '*',
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    credentials: true,
+  };
+
+  app.enableCors(corsOptions);
+
   app.use(bodyParser.json({ limit: '50mb' }));
   app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
 
@@ -22,7 +30,6 @@ async function bootstrap() {
     .setTermsOfService('http://placeholder')
     .setContact("Apeex", 'urlToAPex', 'bebahealthapp@gmail.com')
     .setLicense('Apache 2.0', 'http://www.apache.org/licenses/LICENSE-2.0.html')
-    // .addServer('http://localhost:8080')
     .addTag('beba')
     .addBearerAuth()
     .build();
