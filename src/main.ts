@@ -29,7 +29,9 @@ async function bootstrap() {
     .setVersion('1.0.11')
     .setTermsOfService('http://placeholder')
     .setContact("Apeex", 'urlToAPex', 'bebahealthapp@gmail.com')
+    // .setContactEmail("Elton", )
     .setLicense('Apache 2.0', 'http://www.apache.org/licenses/LICENSE-2.0.html')
+    // .addServer('http://localhost:8080')
     .addTag('beba')
     .addBearerAuth()
     .build();
