@@ -6,7 +6,7 @@ import { Result } from '../../../../dtos/results';
 import { BebaBabyGrowthRecord } from '../../../../entities/baby-growth-record.entity';
 import { codes } from '../../../../codes';
 import { GetBabyGrowthRecordRequest } from '../../../../dtos/getBabyGrowthRecordRequest';
-import * as moment from 'moment';
+import moment from 'moment';;
 import { BabyGrowthRecordRequest } from '../../../../dtos/babyGrowthRecordRequest';
 import { BabyGrowthRecordResponse } from '../../../../dtos/babyGrowthRecordResponse';
 import { BebaBaby } from '../../../../entities/baby.entity';

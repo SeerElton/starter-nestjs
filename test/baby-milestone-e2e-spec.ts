@@ -7,7 +7,7 @@ import { environment } from '../src/environment';
 import { BabyModule } from '../src/modules/baby/baby.module';
 import { AddUserToDB, AddBaby2ToDB, AddPermissionToDB, CleanDB, AddGrowthRecordsToDB } from './test-user';
 import { BebaBaby } from '../src/entities/baby.entity';
-import * as moment from 'moment';
+import moment from 'moment';;
 import { AuthModule } from '../src/modules/auth/auth.module';
 import { BabyGrowthRecordRequest } from '../src/dtos/babyGrowthRecordRequest';
 import { GetBabyGrowthRecordRequest } from '../src/dtos/getBabyGrowthRecordRequest';

@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { BebaPersonalMilestone } from '../../../../entities/personal-milestone.entity';
 import { InjectRepository } from '@nestjs/typeorm';
-import * as moment from 'moment';
+import moment from 'moment';;
 import { Repository } from 'typeorm';
 import { codes } from '../../../../codes';
 import { Result } from '../../../../dtos/results';

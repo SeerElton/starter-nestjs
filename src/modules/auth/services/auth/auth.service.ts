@@ -44,7 +44,7 @@ export class AuthService {
 
             const results: LoginResponse = {
                 name: payload.Name,
-                isVerified: payload.IsVerified,
+                isVerified: true,//payload.IsVerified,
                 jwt: this.jwtService.sign(
                     payload,
                     { expiresIn }
