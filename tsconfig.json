@@ -1,12 +1,12 @@
 {
   "compilerOptions": {
-    // "module": "commonjs",
+    "module": "commonjs",
     "declaration": true,
     "removeComments": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
-    // "target": "es2017",
+    "target": "es2017",
     "sourceMap": true,
     "outDir": "./dist",
     "baseUrl": "./",
@@ -18,11 +18,5 @@
     "noFallthroughCasesInSwitch": false,
     "strict": false,
     "strictNullChecks": false,
-    "lib": [
-      "esnext"
-    ],
-    "module": "CommonJS",
-    "target": "esnext",
-    "moduleResolution": "node",
   }
 }
